@@ -1,0 +1,198 @@
+html{
+	min-height: 100%;
+}
+
+img, video, embed, object {
+	max-width: 100%;
+}
+
+
+.menuCSS3 ul {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.menuCSS3 a {
+	display: block;
+	padding: 2em;
+	background-color: #F9B53C;
+	text-decoration: none;
+	color: #191C26;
+}
+.menuCSS3 a:hover {
+	background-color: #CC673B;
+}
+
+.menuCSS3 ul li ul {
+	display: none;
+}
+.menuCSS3 ul li a:hover + ul, .menuCSS3 ul li ul:hover {
+	display: block;
+}
+
+
+.formulario{
+	display: flex;
+	flex-direction: column;
+}
+
+.botones{
+	display: flex;
+}
+
+/* END OF HEADER STYLE*/
+
+
+.boton_creacion{
+	width: 50%;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+	margin: auto;
+}
+
+
+.bib_alta{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+    align-items: center;
+	float: right;
+	width: 55%;
+	border-left-style: solid; 
+	border-left-width: thin;
+	padding-bottom: 1%;
+    overflow: scroll; 
+    align-content: justify;
+}
+
+.bib_resumen{
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+	border-style: solid;
+	padding-right: 3%;
+	border-color: #024959;
+	margin: 1%;
+}
+
+.photo_bib{
+	width: 50%;
+	justify-content: center;
+    align-items: center;
+}
+
+.bibtitle{
+	border-style: solid;
+	justify-content: center;
+    align-items: center;
+    margin: 5%;
+}
+
+
+/* BD1.HTML */
+.subrayado{
+	text-decoration: underline;
+}
+
+
+
+
+.seccion_destacados{
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+
+
+.texto_descriptivo{
+	border-style: solid;
+	border-width: thin;
+	justify-content: center;
+   	align-items: center;
+   	align-content: justify;
+   	width: 90%;
+   	border: 1%;
+   	padding: 3%;
+}
+
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #80c683;
+	bottom: 0;
+	width: 100%;
+	height: auto;
+	color: black;
+	text-align: center;
+}
+
+
+/* Responsive design*/
+
+
+@media screen and (min-width: 1024px){
+	/* HEADER Y MENÚ*/ 
+
+	header{
+		display: grid;
+		position: relative;
+		background-color: #80c683;
+		justify-content: space-between;
+		justify-content: space-around;
+		grid-template-columns: auto auto auto;
+		justify-content: space-evenly;
+		align-items: center;
+		align-content: center;
+	}
+	/* CONTENIDOS PRINCIPALES */
+
+	.contenidos{
+		display: flex;
+	}
+
+	.info_general{
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+		border-left-style: solid; 
+		padding: 1%;
+		margin: 1%;
+	    align-content: justify;
+	}
+	
+	.destacados{
+		display: flex;
+		flex-direction: column;
+		overflow: scroll;
+		justify-content: center;
+		align-items: center;
+		width: 95%;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+  	header{
+		display: flex;
+		background-color: #80c683;
+		flex-direction: column;
+		align-items: center;
+		align-content: center;
+	}
+	.contenidos{
+		display: flex;
+		flex-direction: column;
+	}
+	.info_general{
+		min-width: 100%;
+		display: block;
+		border-left-style: hidden; 
+	}
+	.seccion_destacados{
+		min-width: 100%;
+		display: block;
+	}
+}

@@ -1,0 +1,187 @@
+/*
+img, video, embed, object {
+	max-width: 100%;
+}
+*/
+html {
+  min-height: 100%;
+}
+
+header{
+	display: grid;
+	position: relative;
+	background-color: #80c683;
+	justify-content: space-between;
+	justify-content: space-around;
+	grid-template-columns: auto auto auto;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content: center;
+}
+
+
+/*
+header{
+	display: grid;
+	position: relative;
+	background-color: #cbc26d;
+	justify-content: space-between;
+	justify-content: space-around;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content: center;
+}
+*/
+
+
+body{
+	/*background-color: #c1d0d9;ffffcf*/
+	/*background-color: #fff9c4;*/
+}
+
+
+/*
+#brand_name{
+	display: flex;
+   	justify-content: center;
+   	align-items: center;
+}
+*/
+
+.formulario{
+	display: flex;
+	flex-direction: column;
+	margin: 2%;
+}
+
+#botones{
+	display: flex;
+	margin-top: 3%;
+}
+
+.contenidos{
+	display: flex;
+	justify-content: space-between;
+	justify-content: space-around;
+}
+
+.izquierda{
+	display: flex;
+	align-items: center;
+	width: 50%;
+	justify-content: center;
+}
+
+.imagen{
+	max-width:100%;
+	/*vertical-align: middle;*/
+
+	width: 50%;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+	margin: auto;
+}
+
+.bib_alta{
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	flex-direction: column;
+	float: right;
+	width: 50%;
+	border-left-style: solid; 
+	padding-bottom: 1%;
+    overflow: scroll; 
+    align-content: justify;
+}
+
+.bib_resumen{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-style: solid;
+	border-color: #024959;
+	margin: 1%;
+	padding-right: 3%;
+
+}
+
+
+.photo_bib{
+	width: 50%;
+	justify-content: center;
+    align-items: center;
+}
+
+
+.bibtitle{
+	display: flex;
+	justify-content: center;
+    align-items: center;
+}
+
+.link{
+	color: black;
+}
+
+
+.data_contact{
+	margin: 5%;
+}
+
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: #80c683;
+	bottom: 0;
+	width: 100%;
+	height: auto;
+	color: black;
+	text-align: center;
+}
+
+/*	No se hace distinción en color antes/después
+	de que un enlace haya sido pulsado*/
+a { color:black; }
+
+
+/* El siguiente código sirve para dar estilo al menú desplegable */ 
+.menuCSS3{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	clear: both;
+	/*
+	border-top-style: solid;
+	border-width: thin;
+	*/
+}
+
+.menuCSS3 ul {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.menuCSS3 a {
+	display: block;
+	padding: 2em;
+	background-color: #F9B53C;
+	text-decoration: none;
+	color: #191C26;
+}
+.menuCSS3 a:hover {
+	background-color: #CC673B;
+}
+
+.menuCSS3 ul li ul {
+	display: none;
+}
+.menuCSS3 ul li a:hover + ul, .menuCSS3 ul li ul:hover {
+	display: block;
+}

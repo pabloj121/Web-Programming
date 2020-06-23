@@ -1,0 +1,6 @@
+<?php  
+	DEFINE ('DB_HOST', "localhost");
+	DEFINE ('DB_USER', "pw20079804");
+	DEFINE ('DB_PASSWD', 20079804);
+	DEFINE ('DB_DATABASE', "db20079804_pw1920");
+?>

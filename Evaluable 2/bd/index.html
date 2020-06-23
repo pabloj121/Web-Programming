@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Gestor de bibliotecas digitales</title>
+	<meta charset="utf-8">
+	<!-- ajustar el ancho al tamaño físico de la pantalla -->
+	<meta name="viewport" content="width=device-width"> 
+	<link rel="stylesheet" type="text/css" href="biblioteca.css">
+	<meta name="author" content="Pablo Jesus Jimenez Ortiz">
+	<meta name="Descripcion" content="Programacion Web - Practica 1">
+	<meta name="Application-Name" content="Digital Library">
+</head>
+<body>
+
+	<header >
+		<img src="./imagenes/logo.png"  alt="Logo">  
+
+		<h1 class="brand_name"> Digital library  </h1>
+		
+		<form action="gestorbd.html" method="post" class="formulario">
+			Usuario 
+			<input type="text" name="user" value="">
+			Contraseña
+			<input type="text" name="password" value="">	
+			<input type="submit" value="Enviar" name="enviar">	
+		</form>
+	</header>
+
+	<main class="contenidos">	
+		
+		<section class="izquierda">	<!-- Left side -->
+			<img class="imagen" src="./imagenes/index2.jpg" alt="Logo2">
+		</section>
+
+		<section class="bib_alta"> 	<!-- Right side -->
+			<h2>Bibliotecas dadas de alta</h2>
+			<article class="bib_resumen">
+				<img class="photo_bib" src="./imagenes/parthenon.jpg"  alt="Logo"> 
+				<h2 class="bib_title"><br><a href="bd1.html"> Historia Antigua</a></h2>				
+			</article>
+
+			<article class="bib_resumen">
+				<img class="photo_bib" src="./imagenes/revistacoches.jpg"  alt="Logo">  
+				<h2 class="bib_title"><br><a href="bd1.html"> Automovilismo</a></h2>				
+			</article>
+
+			<article class="bib_resumen">
+				<img class="photo_bib" src="./imagenes/musica80.jpg"  alt="Logo"> 
+				<h2 class="bib_title"><br><a href="bd1.html"> 80's Music</a></h2>				
+			</article>
+		</section>
+	</main>
+
+	<footer>
+		<h2><a href = "contacto.html">Contacto</a></h2>
+		<h2>&nbsp - &nbsp</h2>
+		
+		<h2>
+			<a class="link" href = "como_se_hizo.pdf"> Cómo se hizo</a>
+		</h2>
+	</footer>
+
+</body>
+</html>

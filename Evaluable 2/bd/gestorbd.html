@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gestor de bibliotecas digitales</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<meta name="author" content="Pablo Jesus Jimenez Ortiz">
+	<meta name="Descripcion" content="Programacion Web - Practica 1">
+	<meta name="Application-Name" content="Digital Library">
+</head>
+
+<body>
+	<header class="cabecera">
+		<img src="./imagenes/logo.png"  alt="Logo">  
+
+		<h1 class="brand_name"> Digital library  </h1>
+		
+		<section class="formulario">
+			Usuario 
+			<input class="username" type="text" name="password" value="usuario">
+			<br>
+
+			<article class="botones">
+				<form action="altagestor.html">
+					<input type="submit" class="b6" value="Alta" name="crear">
+				</form>
+				<form action="borrargestor.html">
+					<input type="submit" class="b6" value="Baja" name="eliminar">
+				</form>
+				<form action="editargestor.html">
+					<input type="submit" class="b6" value="Edición" name="editar">
+				</form>
+			</article>	
+		</section>
+	</header>
+
+	<main class="contenidos">
+		<section class="contenido_izquierda"> 	<!-- Left side -->
+			<form action="crearbd.html">
+				<input type="submit" class="b4" value="Crear biblioteca digital" name="crear">	
+			</form>
+			
+		</section>
+
+
+		<section class="bib_alta">	<!-- Left side -->
+			<h2>Bibliotecas dadas de alta</h2>
+			
+			<article class="bib_resumen">
+				<!-- <a href="b1.html"><h3 class="bib_title">Título</h3></a> -->
+				
+				<img class="photo_bib" src="./imagenes/parthenon.jpg"  alt="Logo"> 
+
+				<h3 class="bib_title"><a href="bd1.html">Historia Antigua</a>
+					<br>
+					<form action="borrarbd.html">
+						<input type="submit" class="b5" value="Borrar biblioteca digital" name="Borrar">
+					</form>
+
+					<form action="editarbd.html">
+						<input type="submit" class="b6" value="Editar biblioteca digital" name="Editar">
+					</form>
+
+				</h3>				
+			</article>
+
+			<article class="bib_resumen">
+				<!-- <a href="b1.html"><h3 class="bib_title">Título</h3></a> -->
+				
+
+				<img class="photo_bib" src="./imagenes/revistacoches.jpg"  alt="Logo"> 
+
+				<h3 class="bib_title"><a href="bd1.html">Automovilismo</a>
+					<br>
+
+					<form action="editarbd.html">
+						<input type="submit" class="b6" value="Editar biblioteca digital" name="Editar">
+					</form>
+
+					<form action="borrarbd.html">
+						<input type="submit" class="b5" value="Borrar biblioteca digital" name="Borrar">
+					</form>
+				</h3>
+				
+			</article>
+
+			<article class="bib_resumen">
+				<!-- <a href="b1.html"><h3 class="bib_title">Título</h3></a> -->
+				
+				<img class="photo_bib" src="./imagenes/musica80.jpg"  alt="Logo"> 
+
+				<aside class="bib_title"><a href="bd1.html">80's Music</a>
+					<br>
+					<form action="borrarbd.html">
+						<input type="submit" class="b5" value="Borrar biblioteca digital" name="Borrar">
+					</form>
+
+					<form action="editarbd.html">
+						<input type="submit" class="b6" value="Editar biblioteca digital" name="Editar">
+					</form>
+
+				</aside>
+				
+			</article>
+		</section>
+
+	</main>	
+
+	<footer>
+		<h2><a href = "contacto.html">Contacto</a></h2>
+		<h2>&nbsp - &nbsp</h2>
+		
+		<h2>
+			<a class="link" href = "como_se_hizo.pdf"> Cómo se hizo</a>
+		</h2>
+	</footer>
+</body>
+</html>

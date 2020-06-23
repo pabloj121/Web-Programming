@@ -1,0 +1,11 @@
+ACCESO AL SERVIDOR
+
+ssh pw20079804@betatun.ugr.es
+
+MYSQL
+mysql -u pw20079804 -p
+use db20079804_pw1920
+
+
+ENLACES
+http://betatun.ugr.es/~pw20079804/
